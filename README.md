@@ -52,8 +52,8 @@ flowchart TD
 - Redis Lua Script 기반 좌석 선점 로직 구현
 
   → Lazy Loading 대신 선택한 이유 : 분리된 연산 사이에 발생하는 중복 선점을 원자적으로 차단
+- Redis multiGet 기반 좌석 상태 병합 조회 최적화
 - k6 테스트(10석 / 37,500 req) 결과 중복 선점 0건 검증
-- Thymeleaf(HTML) 기반 실시간 좌석 렌더링 화면 구현
 - 관련 코드 : `src/.../SeatService.java`
   
 <br>
