@@ -48,9 +48,14 @@ flowchart TD
 
 ## 내가 담당한 부분
 
-### 좌석 선점 동시성 처리
+### 실시간 좌석 선점 API
+- Redis Lua Script 기반 좌석 선점 로직 구현
 
-
+  → Lazy Loading 으로 개선한 이유 : 다중 요청 시 발생하는 중복 선점 차단
+- k6 테스트(10석 / 37,500 req) 결과 중복 선점 0건 검증
+- Thymeleaf(HTML) 기반 실시간 좌석 렌더링 화면
+- 관련 코드 :
+  
 <br>
 
 **[EKS 접근 통제 체계 구축](https://github.com/its-jihyeon/ticket-wave-infra/blob/main/README.md)**
