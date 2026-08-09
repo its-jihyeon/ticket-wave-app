@@ -53,7 +53,7 @@ flowchart TD
 
   → Lazy Loading 으로 개선한 이유 : 다중 요청 시 발생하는 중복 선점 차단
 - k6 테스트(10석 / 37,500 req) 결과 중복 선점 0건 검증
-- Thymeleaf(HTML) 기반 실시간 좌석 렌더링 화면
+- Thymeleaf(HTML) 기반 실시간 좌석 렌더링 화면 구현
 - 관련 코드 :
   
 <br>
